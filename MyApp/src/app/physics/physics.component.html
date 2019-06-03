@@ -1,0 +1,67 @@
+<button (click)="toggle()" id="bt">
+    {{buttonName}}
+</button>
+
+<ng-container *ngIf="show">
+        <div class="col-sm-3 col-md-6">
+        <div>
+            <label>Name:</label>
+            <div><input id="tbname" name="yourname" /></div>
+        </div>
+        <label id="example-radio-group-label">Pick your favorite season</label>
+        <mat-radio-group 
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+          [(ngModel)]="favoriteSeason">
+          <mat-radio-button  class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+            {{season}}
+          </mat-radio-button>
+          <div *ngIf="favoriteSeason=='Winter'">
+            Velocity<input type="text">
+            Velocity2<input type="text">
+          </div>
+          <div *ngIf="favoriteSeason=='Spring'">
+              Acceleration<input type="text">
+              Velocity2<input type="text">
+            </div>
+        </mat-radio-group>
+        <div>Your favorite season is: {{favoriteSeason}}
+        </div>
+        
+
+        
+    </div>
+</ng-container>
+<button (click)="toggle1()" id="bt">
+    {{btName}}
+</button>
+<ng-container *ngIf="xyz">
+    <div class="col-sm-3 col-md-6">
+    <div>
+        <label>Name:</label>
+        <div><input id="tbname" name="yourname" /></div>
+    </div>
+    <label id="example-radio-group-label">Pick your favorite season</label>
+    <mat-radio-group 
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group"
+      [(ngModel)]="country">
+      <mat-radio-button  class="example-radio-button" *ngFor="let country of countries" [value]="country">
+        {{country}}
+      </mat-radio-button>
+      <div *ngIf="favoriteSeason=='Brazil'">
+        Velocity<input type="text">
+        Velocity2<input type="text">
+      </div>
+      <div *ngIf="favoriteSeason=='India'">
+          Acceleration<input type="text">
+          Velocity2<input type="text">
+        </div>
+    </mat-radio-group>
+    <div>Your favorite season is: {{country}}
+    </div>
+    
+
+    
+</div>
+</ng-container>

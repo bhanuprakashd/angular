@@ -1,0 +1,12 @@
+<div class="form_container">
+    <form [formGroup] = "loginForm" (ngSubmit) = "onClickSubmit(formdata.value)">
+      <header>Login</header>
+      <label>Username</label>
+      <input type="email" name="email" formControlName="email"/>
+      <div class="help">Atleast 6 charater</div>
+      <label>Password</label>
+      <input type="password" name="passwd" class="fortextbox" formControlName="passwd"/>
+      <div class="help">Use alphanumeric</div>
+      <button [disabled] = "!loginForm.valid" value="Login">Login</button>
+    </form>
+  </div>
