@@ -1,0 +1,146 @@
+bodys {
+    margin:0 auto;
+    background-image: url('./images/tx.jpg');
+    background-repeat: no-repeat
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  color: rgba(0,0,0,.87);
+}
+
+
+.col-container {
+  display: flex;
+  width: 100%;
+}
+.col {
+  flex: 1;
+  padding: 16px;
+}
+
+.mystyle1{
+  color: "white";
+  background-color: "#f6968d";
+  padding: "20px";
+  font-family: "Arial";
+  margin:"10px";
+  height:"150px";
+  left:"-115px";
+  border-radius: "20px";
+  box-shadow: "2px"
+};
+.mystyle2{
+  color: "white";
+  background-color: "#70a0be";
+  padding: "20px";
+  font-family: "Arial";
+  margin:"10px";
+  height:"150px";
+  left:"-115px";
+  border-radius: "20px";
+  box-shadow: "2px"
+};
+.mystyle3{
+  color: "white";
+  background-color: "#61c1a1";
+  padding: "20px";
+  font-family: "Arial";
+  margin:"10px";
+  height:"150px";
+  left:"-115px";
+  border-radius: "20px";
+  box-shadow: "2px"
+};
+.mystyle4{
+  color: "white";
+  background-color: "#5f575f";
+  padding: "20px";
+  font-family: "Arial";
+  margin:"10px";
+  height:"150px";
+  left:"-115px";
+  border-radius: "20px";
+  box-shadow: "2px"
+};
+
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.full-width-height {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  padding: 16px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.fill {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Worldmap {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+  [data-theme="dark"] .site-layout .site-layout-background {
+    background: #141414;
+  }
